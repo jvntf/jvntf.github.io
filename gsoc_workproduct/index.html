@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Jeevan Farias -- GSOC</title>
+	</head>
+
+	<body>
+		<p>Jeevan Farias</p>
+		<p>GSOC 2017 -- The Processing Foundation</p>
+		<p>The proposal for my GSOC project can be found <a href="https://docs.google.com/document/d/1fC-ZSMrVdsF4MUCxuMoRKNp7_Jx_iXjqxSJM9oT0eC8/edit?usp=sharing">here</a>.</p>
+		<p>Below, find a general description of the work and links to all the Pull Requests pertaining to my work.</p>
+		<p>This project further developed the Sound Library of <a href="p5js.org">p5.js</a>, a part of the <a href="processing.org">Processing Foundation</a></p>
+		<p>Thanks to Jason Sigal for being my mentor for GSOC 2017</p>
+
+		<p style="margin-top:8%"><strong>Abstract</strong></p>
+		<p id = "desc">Processing and p5.js are accessible tools that can be easy to understand for the novice programmer and powerful enough for the experienced. With the intention of helping to diversify the potential users and uses of Processing / p5, this proposal outlines a series of enhancements to p5.js.sound, including new effects, presets, and modules for algorithmic composition. These developments will be useful and interesting to electronic musicians interested in visual art, visual artists interested in electronic music, sound artists, and any other potential user of Processing. These developments are inline with the vision of the tool, as they will add features without distracting from its definition as a "flexible software sketchbook".</p>
+
+		<p>The work linked below is categorized as Processing Sound and playing Sound. These are 8 PRs that I feel are most important and demonstrative of the work I did this summer. 
+		<a href = "https://github.com/processing/p5.js-sound/pulls?page=1&q=is%3Apr+involves%3Ajvntf&utf8=%E2%9C%93">Here</a> is a list of every processing/p5.js-sound pull request that I was involved with this during the course of GSOC.</p>
+
+		<p style="margin-top:8%"><strong>Pull Requests</strong></p>
+		<table id = "effects" style="margin-top:2%">
+		<th>Processing Sound</th>
+				<tr>
+					<td><a href = "https://github.com/processing/p5.js-sound/pull/173">p5.Effect</a></td>
+					<td>This PR helped with the organization of the library. Many effects included much of the same code and so using a base class removes inconsistencies and makes it easier to make new effects.</td>
+				</tr>
+
+				<tr>
+					<td><a href = "https://github.com/processing/p5.js-sound/pull/178">Effects refactored</a></td>
+					<td>Once p5.Effect was built, the other effects in the library needed to be refactored to use inheritance</td>
+				</tr>
+
+				<tr>
+					<td><a href = "https://github.com/processing/p5.js-sound/pull/179">p5.Compressor</a></td>
+					
+					<td>I added an audio compressor class to the library because it is a crucial process for audio production, and can help users get better sounds out of p5.js-sound</td>
+				</tr>
+				<tr>
+					<td><a href = "https://github.com/processing/p5.js-sound/pull/183">p5.EQ</a></td>
+					<td>Similarly to the p5.Compressor, p5.EQ is a quick and easy way to improve or drastically alter a sound source.</td>
+				</tr>
+
+				<tr>
+					<td><a href = "https://github.com/processing/p5.js-sound/pull/198">p5.Panner3D and p5.Listener3D</a></td>
+					<td>These classes added functionality to the former 3D sound component of the library. p5.Listener3D is currently undocumented, because its location in the library may move in the near future</td>
+				</tr>
+		</table>
+
+		<table id = "sounds" style="margin-top:5%">
+			<th>Playing Sound</th>
+				<tr>
+					<td><a href = "https://github.com/processing/p5.js-sound/pull/210">p5.SoundLoop</a></td>
+					<td>The p5.SoundLoop a simpler way to play notes than the Phrase/Part/Score interface. It is a loop with a very accurate clock (via ToneJS) which allows a user to play a loop, schedule sounds, and change all parameters on the fly.</td>
+				</tr>
+
+				<tr>
+					<td><a href = "https://github.com/processing/p5.js-sound/pull/215">Preset Library</a></td>
+					<td>I worked on developing a library of presets for p5.js and was able to do so for effects and synths. This work is still in progress, as the best way to store and access presets in the library can only be determined through time and use. Development should take place on this <a href= "https://github.com/processing/p5.js-sound/tree/presets">branch</a>.</td>
+				</tr>
+
+				<tr>
+					<td><a href = "https://github.com/processing/p5.js-sound/pull/214">p5.MonoSynth and p5.PolySynth</a></td>
+					<td>This PR built on the work of <a href="https://github.com/b2renger">b2renger</a> on the <a href="https://github.com/processing/p5.js-sound/tree/synths">synths</a> branch of the p5.js-sound repo. I added an AudioVoice base class, p5.MonoSynth as an example extension, and p5.PolySynth as an audiovoice handler for polyphonic synthesizers.</td>
+				</tr>
+		</table>
+	</body>
+</html>
