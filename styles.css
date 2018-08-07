@@ -1,0 +1,52 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin:0;
+}
+
+  #title{
+  	font-weight: 900;
+  	overflow: hidden;
+  	width: 80vw;
+  	height:15vw;
+  	font-weight: 900;
+  	font-size: 25vw;
+  	overflow: hidden;
+  	cursor: default;
+  }
+
+  #title_text{
+  	margin-top:-13%;
+  	margin-left:-4%;
+  	color:#606060;
+  }
+
+.text{
+	font-weight: 300;
+	width:94vw;
+}
+
+@media screen and (min-width:600px){
+	.text{
+		width:34vw;
+	}
+}
+#desc, #social, #contact{
+	margin-top: 10vh;
+	margin-left:3vw;
+	margin-right:3vw;
+}
+
+#social{
+	display: flex;
+	justify-content: space-between;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	background: #606060;
+	color:white;
+}
+
