@@ -8,7 +8,7 @@ window.onload = function(){
 			var g = Math.floor(Math.random()*255);
 			console.log(r.toString(16)+b.toString(16)+g.toString(16));
 			title_text.setAttribute("style","color:#"+r.toString(16)+b.toString(16)+g.toString(16));
-		}, 1000);
+		}, 2000);
 	}else{
 		title.onmouseover = function(e){
 			console.log("hello")
