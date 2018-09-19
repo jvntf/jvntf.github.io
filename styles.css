@@ -41,10 +41,13 @@ body {
 #desc,
 #social,
 #contact,
-#projects{
+#projects,#cv{
     margin-top: 10vh;
     margin-left: 3vw;
     margin-right: 3vw;
+}
+#cv{
+    margin-top:2vh;
 }
 
 #social {
@@ -54,7 +57,7 @@ body {
 }
 
 #projects {
-    margin-top: 15vh;
+    margin-top: 12vh;
 }
 
 a{
