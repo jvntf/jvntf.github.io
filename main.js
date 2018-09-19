@@ -1,6 +1,9 @@
 window.onload = function(){
 	var title = document.getElementById("title");
 	var title_text = document.getElementById("title_text");
+	title_text.onclick = function(){
+		location.href = "/index.html"
+	}
 	if (window.screen.width<=600){
 		setInterval(()=>{ 
 			var r = Math.floor(Math.random()*255);
@@ -23,3 +26,5 @@ window.onload = function(){
 		}
 	}
 }
+
+

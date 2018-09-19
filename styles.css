@@ -20,6 +20,7 @@ body {
     margin-top: -13%;
     margin-left: -4%;
     color: #606060;
+    cursor: pointer;
 }
 
 .text {
@@ -39,7 +40,8 @@ body {
 
 #desc,
 #social,
-#contact {
+#contact,
+#projects{
     margin-top: 10vh;
     margin-left: 3vw;
     margin-right: 3vw;
@@ -51,12 +53,12 @@ body {
     margin-top: 5vh;
 }
 
-#contact {
+#projects {
     margin-top: 15vh;
 }
 
-a {
-    text-decoration: none;
+a{
+    text-decoration: underline;
     color: black;
 }
 
