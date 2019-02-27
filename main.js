@@ -2,7 +2,7 @@ window.onload = function(){
 	var title = document.getElementById("title");
 	var title_text = document.getElementById("title_text");
 	title_text.onclick = function(){
-		location.href = "/index.html"
+		location.href = "/"
 	}
 	if (window.screen.width<=600){
 		setInterval(()=>{ 
